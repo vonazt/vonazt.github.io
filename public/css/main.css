@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(45deg, #a05078, rgba(160, 80, 120, 0.7) 25%, rgba(200, 140, 70, 0.6) 50%, rgba(240, 200, 20, 0.5) 75%, #f0c814);
+  background: linear-gradient(45deg, #a05078, rgba(160, 80, 120, 0.7) 25%, rgba(190, 130, 60, 0.8) 50%, rgba(220, 170, 0, 0.9) 75%, #faa050);
   font-family: 'Quicksand', sans-serif;
   color: white;
   font-weight: 700; }
@@ -13,6 +13,18 @@ body {
 
 h1.title.is-1 {
   font-size: 5rem; }
+
+h2.title.is-2 {
+  margin-bottom: 0; }
+
+h3.title.is-3:not(:first-child) {
+  margin-top: 2rem; }
+
+.subtitle {
+  font-weight: 700;
+  color: white; }
+  .subtitle a {
+    color: white; }
 
 .content {
   display: flex;
@@ -31,10 +43,34 @@ ul {
 li {
   display: inline;
   text-transform: uppercase;
+  font-size: 1.2rem;
   font-weight: 700;
   padding: 1rem; }
   li:not(:first-child):not(:last-child) {
     border-left: 2px solid white;
     border-right: 2px solid white; }
+
+.text {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white; }
+  .text p {
+    font-size: 1.1rem;
+    margin: 2rem; }
+    .text p:first-child {
+      padding-top: 1rem; }
+    .text p:last-child {
+      padding-bottom: 1rem; }
+
+.portfolio {
+  border-bottom: 2px solid white;
+  padding: 1rem; }
+
+.parallax {
+  background-image: url("https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?auto=compress&cs=tinysrgb&h=350");
+  height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 /*# sourceMappingURL=main.css.map */
