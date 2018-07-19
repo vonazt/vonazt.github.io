@@ -1,0 +1,29 @@
+body {
+  min-height: 1000px;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(45deg, rgba(160, 80, 120, 1), rgba(160, 80, 120, .7) 25%, rgba(200, 140, 70, .6) 50%, rgba(240, 200, 20, .5) 75%, rgba(240, 200, 20, 1))
+}
+
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.intro {
+  margin: 0 auto;
+  padding-top: 1rem;
+  ul {
+    display: flex;
+    justify-content: center;
+    .navigation {
+      display: inline;
+      padding: 1rem;
+      border: 2px solid white;
+      border-bottom: none;
+      margin: 0 auto;
+      color: white;
+    }
+  }
+}
