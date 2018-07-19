@@ -1,26 +1,40 @@
 body {
-  min-height: 1000px;
+  background: linear-gradient(45deg, #a05078, rgba(160, 80, 120, 0.7) 25%, rgba(200, 140, 70, 0.6) 50%, rgba(240, 200, 20, 0.5) 75%, #f0c814);
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  font-weight: 700; }
+
+.container {
+  text-align: center; }
+
+.title {
+  font-family: 'Josefin Sans', sans-serif;
+  color: white; }
+
+h1.title.is-1 {
+  font-size: 5rem; }
+
+.content {
   display: flex;
   justify-content: center;
-  background: linear-gradient(45deg, #a05078, rgba(160, 80, 120, 0.7) 25%, rgba(200, 140, 70, 0.6) 50%, rgba(240, 200, 20, 0.5) 75%, #f0c814); }
-
-h1 {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 3rem;
-  margin-bottom: 1rem; }
-
-.intro {
   margin: 0 auto;
-  padding-top: 1rem; }
-  .intro ul {
-    display: flex;
-    justify-content: center; }
-    .intro ul .navigation {
-      display: inline;
-      padding: 1rem;
-      border: 2px solid white;
-      border-bottom: none;
-      margin: 0 auto;
-      color: white; }
+  background: white;
+  content: '';
+  width: 2px;
+  height: 5rem; }
+
+ul {
+  border: 2px solid white;
+  border-radius: 5px;
+  margin-top: 0; }
+
+li {
+  display: inline;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 1rem; }
+  li:not(:first-child):not(:last-child) {
+    border-left: 2px solid white;
+    border-right: 2px solid white; }
 
 /*# sourceMappingURL=main.css.map */
