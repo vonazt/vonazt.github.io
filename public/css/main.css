@@ -19,7 +19,7 @@ body {
   animation: contact-nav 5s; }
 
 #portfolio-nav {
-  animation: portfolio-nav 5s; }
+  animation: portfolio-nav 3.5s; }
 
 @keyframes about-me-nav {
   0% {
@@ -38,8 +38,28 @@ body {
     position: relative;
     top: -550px;
     border: none; }
-  50% {
-    top: 80px; } }
+  51% {
+    border: none;
+    position: relative; }
+  55% {
+    border: none;
+    position: relative;
+    top: 0; }
+  56% {
+    border-left: 2px solid rgba(255, 255, 255, 0.15);
+    border-right: 2px solid rgba(255, 255, 255, 0.15); }
+  70% {
+    border-left: 2px solid rgba(255, 255, 255, 0.35);
+    border-right: 2px solid rgba(255, 255, 255, 0.35); }
+  83% {
+    border-left: 2px solid rgba(255, 255, 255, 0.5);
+    border-right: 2px solid rgba(255, 255, 255, 0.5); }
+  90% {
+    border-left: 2px solid rgba(255, 255, 255, 0.75);
+    border-right: 2px solid rgba(255, 255, 255, 0.75); }
+  99% {
+    border-left: 2px solid white;
+    border-right: 2px solid white; } }
 #arrow-position a {
   padding-top: 60px; }
 
@@ -95,21 +115,26 @@ h3.title.is-3:not(:first-child) {
   height: 6rem; }
 
 ul {
-  border: 2px solid white;
-  border-radius: 5px;
+  border: none;
   margin-top: 0;
-  animation: bottomright 5s;
-  width: 100%; }
+  animation: bottomright 2.5s linear 1s forwards; }
 
 @keyframes bottomright {
   0% {
-    width: 0;
-    height: 0; }
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-radius: 5px; }
   25% {
-    height: 0; }
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-radius: 5px; }
   50% {
-    width: 100%;
-    height: 56px; } }
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    border-radius: 5px; }
+  75% {
+    border: 2px solid rgba(255, 255, 255, 0.75);
+    border-radius: 5px; }
+  100% {
+    border: 2px solid white;
+    border-radius: 5px; } }
 li {
   display: inline;
   text-transform: uppercase;
