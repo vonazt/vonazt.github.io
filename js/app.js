@@ -17,8 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
     lifeLike: true
   });
 
-  $('#scroll-arrow').on('click', function() {
-    console.log('clicked');
-    $('#about-me').animate({ scrollTop: $('#about-me')[0].scrollheight}, 'linear');
+  $('a[href*="#"]').on('click', function() {
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
   });
 });

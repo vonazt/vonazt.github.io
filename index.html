@@ -14,24 +14,26 @@
 </head>
 <body>
   <section class="section">
-    <div class="container" id="header-content">
+    <div class="container header-content">
       <h1 class="title is-1">Richard Tzanov</h1>
       <div class="content">
       </div>
-      <ul class="columns is-centered is-mobile">
-        <li class="column is-one-third">About Me</li>
-        <li class="column is-one-third">Portfolio</li>
-        <li class="column is-one-third">Contact</li>
+      <ul class="columns is-centered is-mobile draw">
+        <li id="about-me-nav" class="column is-one-third">About Me</li>
+        <li id="portfolio-nav" class="column is-one-third">Portfolio</li>
+        <li id="contact-nav" class="column is-one-third">Contact</li>
       </ul>
-       <a id="scroll-arrow" href="#about-me"><span></span></a>
+      <div id="arrow-position">
+        <a class="" id="scroll-arrow" href="#about-me"><span></span></a>
+      </div>
     </div>
   </section>
-  <div class="parallax" id="about-me">
+  <div class="parallax">
     <h1 class="title is-1">here's some text</h1>
 
   </div>
 
-  <section class="section">
+  <section class="section" id="about-me">
     <div class="container">
       <h2 class="title is-2" id="about-me-title">About Me</h2>
       <div class="text">
@@ -46,7 +48,7 @@
     </div>
   </section>
 
-  <div class="parallax">
+  <div class="parallax" id="portfolio-top">
     <h1 class="title is-1">here's some text</h1>
   </div>
 
