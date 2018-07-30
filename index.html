@@ -3,18 +3,19 @@
 <head>
   <meta charset="utf-8">
   <title>Richard Tzanov - Web Developer</title>
-  <script src=“https://cdnjs.cloudflare.com/ajax/libs/typeit/5.9.0/typeit.min.js“></script>
   <script src="./js/app.js" charset="utf-8"></script>
   <link rel="stylesheet" href="./public/css/reset.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
   <link rel="stylesheet" href="./public/css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,700,700i|Quicksand:400,700" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/5.9.0/typeit.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
   <section class="section">
-    <div class="container">
-      <h1 id="my-name" class="title is-1"></h1>
+    <div class="container" id="header-content">
+      <h1 class="title is-1">Richard Tzanov</h1>
       <div class="content">
       </div>
       <ul class="columns is-centered is-mobile">
@@ -22,16 +23,17 @@
         <li class="column is-one-third">Portfolio</li>
         <li class="column is-one-third">Contact</li>
       </ul>
+       <a id="scroll-arrow" href="#about-me"><span></span></a>
     </div>
   </section>
-  <div class="parallax">
+  <div class="parallax" id="about-me">
     <h1 class="title is-1">here's some text</h1>
 
   </div>
 
   <section class="section">
     <div class="container">
-      <h2 class="title is-2">About Me</h2>
+      <h2 class="title is-2" id="about-me-title">About Me</h2>
       <div class="text">
         <p>All my life I’ve been obsessed with culture, creativity and problem-solving, whether it’s reading every kind of book I can find, playing 2D platformers, engaging in political debate, finding the perfect chilli recipe, travelling to the far corners of the world, building an eclectic record collection, solving crosswords, doing pub quizzes or supporting Saracens rugby. I have a voracious appetite for whatever is happening in the world.</p>
 
@@ -50,7 +52,7 @@
 
   <section class="section">
     <div class="container">
-      <h2 class="title is-2 portfolio">Portfolio</h2>
+      <h2 class="title is-2 portfolio" id="portfolio-type"></h2>
 
       <div class="portfolio">
         <h3 class="title is-3">Project 4: Check It</h3>

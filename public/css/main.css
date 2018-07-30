@@ -7,12 +7,43 @@ body {
 .container {
   text-align: center; }
 
+#header-content {
+  margin-top: 15%;
+  justify-content: center;
+  height: 80vh; }
+
+#header-content a {
+  padding-top: 60px; }
+
+#header-content a span {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 5px solid #fff;
+  border-bottom: 5px solid #fff;
+  transform: rotate(-45deg);
+  animation: scroll-arrow 2s infinite;
+  box-sizing: border-box; }
+
+@keyframes scroll-arrow {
+  0% {
+    transform: rotate(-45deg) translate(0, 0); }
+  20% {
+    transform: rotate(-45deg) translate(-10px, 10px); }
+  40% {
+    transform: rotate(-45deg) translate(0, 0); } }
 .title {
   font-family: 'Josefin Sans', sans-serif;
   color: white; }
 
 h1.title.is-1 {
-  font-size: 5rem; }
+  font-size: 6rem;
+  text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 0; }
 
 h2.title.is-2 {
   margin-bottom: 0; }
@@ -33,7 +64,7 @@ h3.title.is-3:not(:first-child) {
   background: white;
   content: '';
   width: 2px;
-  height: 5rem; }
+  height: 6rem; }
 
 ul {
   border: 2px solid white;
