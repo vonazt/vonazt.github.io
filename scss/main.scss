@@ -1,8 +1,29 @@
 body {
-  background: linear-gradient(to left, rgba(160, 80, 120, 1), rgba(160, 80, 120, .7) 25%, rgba(190, 130, 60, .8) 50%, rgba(220,170,0, .9) 75%, rgba(250, 160, 80, 1));
+  background: linear-gradient(to right, rgba(20, 180, 80, 1), rgba(100, 80, 190, 1));
   font-family: 'Quicksand', sans-serif;
   color: white;
   font-weight: 700;
+}
+
+.start {
+  opacity: 0;
+}
+
+.navbar {
+  background: url('../assets/images/nav-background.png');
+  background-size: contain;
+  z-index: 1;
+  .navbar-item {
+    color: white;
+    font-style: italic;
+  }
+}
+
+.section {
+  height: 100vh;
+}
+#about-me {
+  height: 100vh;
 }
 
 .container {
@@ -10,9 +31,8 @@ body {
 }
 
 .header-content {
-  margin-top: 15%;
+  margin: 15% auto;
   justify-content: center;
-  height: 80vh;
 }
 
 #about-me-nav {
@@ -79,12 +99,25 @@ body {
   }
 }
 
-#arrow-position a {
+#arrow-to-about a {
   padding-top: 60px;
 }
-#arrow-position a span {
+#arrow-to-about a span {
   position: absolute;
-  bottom: 20%;
+  bottom: 10%;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 5px solid #fff;
+  border-bottom: 5px solid #fff;
+  transform: rotate(-45deg);
+  animation: scroll-arrow 2s infinite;
+  box-sizing: border-box;
+}
+#arrow-to-portfolio a span {
+  position: absolute;
+  bottom: -5%;
   left: 50%;
   width: 24px;
   height: 24px;
@@ -150,7 +183,6 @@ h3.title.is-3 {
 
 ul {
   border: none;
-  margin-top: 0;
   animation: bottomright 2.5s linear 1s forwards;
 }
 
@@ -194,6 +226,7 @@ li {
   border-bottom: 2px solid white;
 
   p {
+    text-align: left;
     font-size: 1.1rem;
     margin: 2rem;
     &:first-child {

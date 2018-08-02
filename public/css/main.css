@@ -1,16 +1,32 @@
 body {
-  background: linear-gradient(to left, #a05078, rgba(160, 80, 120, 0.7) 25%, rgba(190, 130, 60, 0.8) 50%, rgba(220, 170, 0, 0.9) 75%, #faa050);
+  background: linear-gradient(to right, #14b450, #6450be);
   font-family: 'Quicksand', sans-serif;
   color: white;
   font-weight: 700; }
+
+.start {
+  opacity: 0; }
+
+.navbar {
+  background: url("../assets/images/nav-background.png");
+  background-size: contain;
+  z-index: 1; }
+  .navbar .navbar-item {
+    color: white;
+    font-style: italic; }
+
+.section {
+  height: 100vh; }
+
+#about-me {
+  height: 100vh; }
 
 .container {
   text-align: center; }
 
 .header-content {
-  margin-top: 15%;
-  justify-content: center;
-  height: 80vh; }
+  margin: 15% auto;
+  justify-content: center; }
 
 #about-me-nav {
   animation: about-me-nav 5s; }
@@ -60,12 +76,25 @@ body {
   99% {
     border-left: 2px solid white;
     border-right: 2px solid white; } }
-#arrow-position a {
+#arrow-to-about a {
   padding-top: 60px; }
 
-#arrow-position a span {
+#arrow-to-about a span {
   position: absolute;
-  bottom: 20%;
+  bottom: 10%;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 5px solid #fff;
+  border-bottom: 5px solid #fff;
+  transform: rotate(-45deg);
+  animation: scroll-arrow 2s infinite;
+  box-sizing: border-box; }
+
+#arrow-to-portfolio a span {
+  position: absolute;
+  bottom: -5%;
   left: 50%;
   width: 24px;
   height: 24px;
@@ -116,7 +145,6 @@ h3.title.is-3:not(:first-child) {
 
 ul {
   border: none;
-  margin-top: 0;
   animation: bottomright 2.5s linear 1s forwards; }
 
 @keyframes bottomright {
@@ -149,6 +177,7 @@ li {
   border-top: 2px solid white;
   border-bottom: 2px solid white; }
   .text p {
+    text-align: left;
     font-size: 1.1rem;
     margin: 2rem; }
     .text p:first-child {

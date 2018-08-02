@@ -1,5 +1,4 @@
 /* global TypeIt */
-console.log('loaded');
 
 window.addEventListener('DOMContentLoaded', () => {
   new TypeIt('#about-me-title', {
@@ -19,5 +18,21 @@ window.addEventListener('DOMContentLoaded', () => {
 
   $('a[href*="#"]').on('click', function() {
     $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+  });
+
+  const nav = $('#nav');
+  function displayNav() {
+    const scrollTop = $(window).scrollTop();
+    if (scrollTop > 700) {
+      nav.removeClass('start');
+      nav.addClass('navbar is-fixed-top');
+    } else {
+      nav.removeClass('navbar is-fixed-top');
+      nav.addClass('start');
+    }
+  }
+
+  $(window).scroll(() => {
+    displayNav();
   });
 });
