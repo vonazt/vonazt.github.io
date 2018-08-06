@@ -1,15 +1,29 @@
 body {
-  background: linear-gradient(to right, #14b450, #6450be);
+  animation: heroAnimation 1000s ease infinite;
+  background: linear-gradient(to right, #14b450, #2878b4, #5a28be, #9650a0, #dc3c3c);
+  background-size: 500% 500%;
   font-family: 'Quicksand', sans-serif;
   color: white;
   font-weight: 700; }
 
+@keyframes heroAnimation {
+  0% {
+    background-position: 1% 0%; }
+  50% {
+    background-position: 99% 100%; }
+  100% {
+    background-position: 1% 0%; } }
 .start {
-  opacity: 0; }
+  animation: heroAnimation 1000s ease infinite;
+  background: linear-gradient(to right, rgba(20, 180, 80, 0), rgba(40, 120, 140, 0), rgba(60, 40, 190, 0), rgba(150, 80, 160, 0), rgba(220, 80, 100, 0));
+  background-size: 500% 500%; }
+  .start .navbar-item {
+    opacity: 0; }
 
 .navbar {
-  background: url("../assets/images/nav-background.png");
-  background-size: contain;
+  animation: heroAnimation 1000s ease infinite;
+  background: linear-gradient(to right, #14b450, #2878b4, #5a28be, #9650a0, #dc3c3c);
+  background-size: 500% 500%;
   z-index: 1; }
   .navbar .navbar-item {
     color: white;
@@ -19,7 +33,10 @@ body {
   height: 100vh; }
 
 #about-me {
-  height: 100vh; }
+  height: 50px; }
+
+#portfolio {
+  height: 50px; }
 
 .container {
   text-align: center; }
@@ -124,6 +141,8 @@ h1.title.is-1 {
 
 h2.title.is-2 {
   margin-bottom: 0; }
+  h2.title.is-2 .header-description {
+    height: 3rem; }
 
 h3.title.is-3:not(:first-child) {
   margin-top: 2rem; }
@@ -134,18 +153,19 @@ h3.title.is-3:not(:first-child) {
   .subtitle a {
     color: white; }
 
-.content {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  background: white;
-  content: '';
-  width: 2px;
-  height: 6rem; }
-
-ul {
+ul#intro {
   border: none;
+  margin-top: 3rem;
   animation: bottomright 2.5s linear 1s forwards; }
+
+.tabs ul.tabs {
+  border-bottom: 2px solid white; }
+  .tabs ul.tabs li a {
+    color: white; }
+    .tabs ul.tabs li a:hover {
+      color: black; }
+  .tabs ul.tabs li a.selected {
+    color: black; }
 
 @keyframes bottomright {
   0% {
@@ -163,19 +183,20 @@ ul {
   100% {
     border: 2px solid white;
     border-radius: 5px; } }
-li {
+.intro-li {
   display: inline;
   text-transform: uppercase;
   font-size: 1.2rem;
   font-weight: 700;
   padding: 1rem; }
-  li:not(:first-child):not(:last-child) {
+  .intro-li:not(:first-child):not(:last-child) {
     border-left: 2px solid white;
     border-right: 2px solid white; }
 
 .text {
-  border-top: 2px solid white;
-  border-bottom: 2px solid white; }
+  border-bottom: 2px solid white;
+  height: 70vh;
+  overflow: scroll; }
   .text p {
     text-align: left;
     font-size: 1.1rem;
@@ -184,10 +205,6 @@ li {
       padding-top: 1rem; }
     .text p:last-child {
       padding-bottom: 1rem; }
-
-.portfolio {
-  border-bottom: 2px solid white;
-  padding: 1rem; }
 
 .parallax {
   background-image: url("https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?auto=compress&cs=tinysrgb&h=350");

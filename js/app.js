@@ -1,5 +1,27 @@
 /* global TypeIt */
 
+function displayAboutTab() {
+  $('a[id*="about-tab"]').on('click', function() {
+    $(this).parent().siblings().removeClass('is-active');
+    $(this).parent().parent().children().children().removeClass('selected');
+    $(this).addClass('selected');
+    $(this).parent().addClass('is-active');
+    $('[id*="about-text"]').hide();
+    $(`#${this.id.slice(0, -4)}-text`).show();
+  });
+}
+function displayPortfolioTab() {
+  $('a[id*="portfolio-tab"]').on('click', function() {
+    $(this).parent().siblings().removeClass('is-active');
+    $(this).parent().parent().children().children().removeClass('selected');
+    $(this).addClass('selected');
+    $(this).parent().addClass('is-active');
+    $('[id*="portfolio-text"]').hide();
+    $(`#${this.id.slice(0, -4)}-text`).show();
+  });
+}
+
+
 window.addEventListener('DOMContentLoaded', () => {
   new TypeIt('#about-me-title', {
     strings: 'ABOUT ME',
@@ -31,6 +53,14 @@ window.addEventListener('DOMContentLoaded', () => {
       nav.addClass('start');
     }
   }
+
+  $('[id*="about-text"]').hide();
+  $('#why-coding-about-text').show();
+  displayAboutTab();
+
+  $('[id*="portfolio-text"]').hide();
+  $('#check-it-portfolio-text').show();
+  displayPortfolioTab();
 
   $(window).scroll(() => {
     displayNav();

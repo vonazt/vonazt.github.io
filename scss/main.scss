@@ -1,17 +1,31 @@
 body {
-  background: linear-gradient(to right, rgba(20, 180, 80, 1), rgba(100, 80, 190, 1));
+  animation: heroAnimation 1000s ease infinite;
+  background: linear-gradient(to right, rgba(20, 180, 80, 1), rgba(40, 120, 180, 1), rgba(90, 40, 190, 1), rgba(150, 80, 160, 1), rgba(220, 60, 60, 1));
+  background-size:  500% 500%;
   font-family: 'Quicksand', sans-serif;
   color: white;
   font-weight: 700;
 }
 
+@keyframes heroAnimation {
+    0%{background-position:1% 0%}
+    50%{background-position:99% 100%}
+    100%{background-position:1% 0%}
+}
+
 .start {
-  opacity: 0;
+  animation: heroAnimation 1000s ease infinite;
+  background: linear-gradient(to right, rgba(20, 180, 80, 0), rgba(40, 120, 140, 0), rgba(60, 40, 190, 0), rgba(150, 80, 160, 0), rgba(220, 80, 100, 0));
+  background-size:  500% 500%;
+  .navbar-item {
+    opacity: 0;
+  }
 }
 
 .navbar {
-  background: url('../assets/images/nav-background.png');
-  background-size: contain;
+  animation: heroAnimation 1000s ease infinite;
+  background: linear-gradient(to right, rgba(20, 180, 80, 1), rgba(40, 120, 180, 1), rgba(90, 40, 190, 1), rgba(150, 80, 160, 1), rgba(220, 60, 60, 1));
+  background-size:  500% 500%;
   z-index: 1;
   .navbar-item {
     color: white;
@@ -22,8 +36,13 @@ body {
 .section {
   height: 100vh;
 }
+
 #about-me {
-  height: 100vh;
+  height: 50px;
+}
+
+#portfolio {
+  height: 50px;
 }
 
 .container {
@@ -154,6 +173,9 @@ h1.title.is-1 {
 
 h2.title.is-2 {
   margin-bottom: 0;
+  .header-description {
+    height: 3rem;
+  }
 }
 
 
@@ -171,20 +193,37 @@ h3.title.is-3 {
   }
 }
 
-.content {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  background: rgb(255,255,255);
-  content: '';
-  width: 2px;
-  height: 6rem;
-}
+// .content {
+//   display: flex;
+//   justify-content: center;
+//   margin: 0 auto;
+//   background: rgb(255,255,255);
+//   content: '';
+//   width: 2px;
+//   height: 6rem;
+// }
 
-ul {
+ul#intro {
   border: none;
+  margin-top: 3rem;
   animation: bottomright 2.5s linear 1s forwards;
 }
+
+.tabs ul.tabs {
+  border-bottom: 2px solid white;
+  li {
+    a {
+      color: white;
+      &:hover {
+        color: black;
+      }
+    }
+    a.selected {
+      color: black;
+    }
+  }
+}
+
 
 @keyframes bottomright {
   0% {
@@ -209,7 +248,7 @@ ul {
   }
 }
 
-li {
+.intro-li {
   display: inline;
   text-transform: uppercase;
   font-size: 1.2rem;
@@ -222,9 +261,9 @@ li {
 }
 
 .text {
-  border-top: 2px solid white;
   border-bottom: 2px solid white;
-
+  height: 70vh;
+  overflow: scroll;
   p {
     text-align: left;
     font-size: 1.1rem;
@@ -236,11 +275,6 @@ li {
       padding-bottom: 1rem;
     }
   }
-}
-
-.portfolio {
-  border-bottom: 2px solid white;
-  padding: 1rem;
 }
 
 
