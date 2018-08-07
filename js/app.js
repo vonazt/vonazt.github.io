@@ -21,7 +21,6 @@ function displayPortfolioTab() {
   });
 }
 
-
 window.addEventListener('DOMContentLoaded', () => {
   new TypeIt('#about-me-title', {
     strings: 'ABOUT ME',

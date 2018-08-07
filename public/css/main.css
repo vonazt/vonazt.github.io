@@ -38,6 +38,9 @@ body {
 #portfolio {
   height: 50px; }
 
+#contact {
+  height: 10px; }
+
 .container {
   text-align: center; }
 
@@ -192,6 +195,8 @@ ul#intro {
   .intro-li:not(:first-child):not(:last-child) {
     border-left: 2px solid white;
     border-right: 2px solid white; }
+  .intro-li a {
+    color: white; }
 
 .text {
   border-bottom: 2px solid white;
@@ -202,9 +207,18 @@ ul#intro {
     font-size: 1.1rem;
     margin: 2rem; }
     .text p:first-child {
+      margin-top: 0;
       padding-top: 1rem; }
     .text p:last-child {
       padding-bottom: 1rem; }
+    .text p a {
+      color: white;
+      text-decoration: underline; }
+
+img {
+  border: 2px solid white;
+  height: 250px;
+  width: 360px; }
 
 .parallax {
   background-image: url("https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?auto=compress&cs=tinysrgb&h=350");

@@ -44,6 +44,9 @@ body {
 #portfolio {
   height: 50px;
 }
+#contact {
+  height: 10px;
+}
 
 .container {
   text-align: center;
@@ -193,16 +196,6 @@ h3.title.is-3 {
   }
 }
 
-// .content {
-//   display: flex;
-//   justify-content: center;
-//   margin: 0 auto;
-//   background: rgb(255,255,255);
-//   content: '';
-//   width: 2px;
-//   height: 6rem;
-// }
-
 ul#intro {
   border: none;
   margin-top: 3rem;
@@ -258,6 +251,9 @@ ul#intro {
     border-left: 2px solid white;
     border-right: 2px solid white;
   }
+  a {
+    color: white;
+  }
 }
 
 .text {
@@ -269,12 +265,23 @@ ul#intro {
     font-size: 1.1rem;
     margin: 2rem;
     &:first-child {
+      margin-top: 0;
       padding-top: 1rem;
     }
     &:last-child {
       padding-bottom: 1rem;
     }
+    a {
+      color: white;
+      text-decoration: underline;
+    }
   }
+}
+
+img {
+  border: 2px solid white;
+  height: 250px;
+  width: 360px;
 }
 
 
