@@ -54,7 +54,7 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
   $('[id*="about-text"]').hide();
-  $('#why-coding-about-text').show();
+  $('#as-a-coder-about-text').show();
   displayAboutTab();
 
   $('[id*="portfolio-text"]').hide();

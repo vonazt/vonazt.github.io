@@ -1,7 +1,7 @@
 body {
-  animation: heroAnimation 1000s ease infinite;
+  animation: heroAnimation 1000s ease-in infinite;
   background: linear-gradient(to right, #14b450, #2878b4, #5a28be, #9650a0, #dc3c3c);
-  background-size: 500% 500%;
+  background-size: 350% 350%;
   font-family: 'Quicksand', sans-serif;
   color: white;
   font-weight: 700; }
@@ -14,16 +14,16 @@ body {
   100% {
     background-position: 1% 0%; } }
 .start {
-  animation: heroAnimation 1000s ease infinite;
+  animation: heroAnimation 1000s ease-in infinite;
   background: linear-gradient(to right, rgba(20, 180, 80, 0), rgba(40, 120, 140, 0), rgba(60, 40, 190, 0), rgba(150, 80, 160, 0), rgba(220, 80, 100, 0));
-  background-size: 500% 500%; }
+  background-size: 350% 350%; }
   .start .navbar-item {
     opacity: 0; }
 
 .navbar {
-  animation: heroAnimation 1000s ease infinite;
+  animation: heroAnimation 1000s ease-in infinite;
   background: linear-gradient(to right, #14b450, #2878b4, #5a28be, #9650a0, #dc3c3c);
-  background-size: 500% 500%;
+  background-size: 350% 350%;
   z-index: 1; }
   .navbar .navbar-item {
     color: white;
@@ -206,6 +206,13 @@ ul#intro {
     text-align: left;
     font-size: 1.1rem;
     margin: 2rem; }
+    .text p .drop-character {
+      float: left;
+      font-size: 75px;
+      line-height: 60px;
+      padding-top: 4px;
+      padding-right: 8px;
+      padding-left: 3px; }
     .text p:first-child {
       margin-top: 0;
       padding-top: 1rem; }
@@ -215,10 +222,10 @@ ul#intro {
       color: white;
       text-decoration: underline; }
 
-img {
+img.inline {
   border: 2px solid white;
-  height: 250px;
-  width: 360px; }
+  height: 220px;
+  width: 350px; }
 
 .parallax {
   background-image: url("https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?auto=compress&cs=tinysrgb&h=350");
