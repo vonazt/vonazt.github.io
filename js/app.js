@@ -8,6 +8,9 @@ function displayAboutTab() {
     $(this).parent().addClass('is-active');
     $('[id*="about-text"]').hide();
     $(`#${this.id.slice(0, -4)}-text`).show();
+    $('.text').animate({
+      scrollTop: $(this).position().top
+    }, 'linear');
   });
 }
 function displayPortfolioTab() {
@@ -36,7 +39,7 @@ window.addEventListener('DOMContentLoaded', () => {
     cursor: false,
     lifeLike: true
   });
-
+  
   $('a[href*="#"]').on('click', function() {
     $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
   });

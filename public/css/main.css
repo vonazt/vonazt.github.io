@@ -150,10 +150,12 @@ h2.title.is-2 {
 h3.title.is-3:not(:first-child) {
   margin-top: 2rem; }
 
-.subtitle {
+h5.subtitle.is-5 {
+  margin: 0 2.5rem 0 2.5rem;
   font-weight: 700;
+  text-align: left;
   color: white; }
-  .subtitle a {
+  h5.subtitle.is-5 a {
     color: white; }
 
 ul#intro {
@@ -205,7 +207,7 @@ ul#intro {
   .text p {
     text-align: left;
     font-size: 1.1rem;
-    margin: 2rem; }
+    margin: 2.5rem; }
     .text p .drop-character {
       float: left;
       font-size: 75px;
@@ -220,9 +222,6 @@ ul#intro {
       padding-top: 4px;
       padding-right: 8px;
       padding-left: 3px; }
-    .text p:first-child {
-      margin-top: 0;
-      padding-top: 1rem; }
     .text p:last-child {
       padding-bottom: 1rem; }
     .text p a {
@@ -234,12 +233,9 @@ img.inline {
   height: 220px;
   width: 350px; }
 
-.parallax {
-  background-image: url("https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?auto=compress&cs=tinysrgb&h=350");
-  height: 300px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
+.portfolio-gif {
+  border: 2px solid white;
+  height: 400px;
+  width: 780px; }
 
 /*# sourceMappingURL=main.css.map */
