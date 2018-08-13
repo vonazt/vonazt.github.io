@@ -9,7 +9,7 @@ function displayAboutTab() {
     $('[id*="about-text"]').hide();
     $(`#${this.id.slice(0, -4)}-text`).show();
     $('.text').animate({
-      scrollTop: $(this).position().top
+      scrollTop: $('#about-me-title').position().top
     }, 'linear');
   });
 }
@@ -21,6 +21,9 @@ function displayPortfolioTab() {
     $(this).parent().addClass('is-active');
     $('[id*="portfolio-text"]').hide();
     $(`#${this.id.slice(0, -4)}-text`).show();
+    $('.text').animate({
+      scrollTop: $('#portfolio-type').position().top
+    }, 'linear');
   });
 }
 
@@ -39,20 +42,23 @@ window.addEventListener('DOMContentLoaded', () => {
     cursor: false,
     lifeLike: true
   });
-  
-  $('a[href*="#"]').on('click', function() {
-    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+
+  $('a[href*="#menu"]').on('click', function() {
+    $('html').animate({ scrollTop: $($(this).attr('href')).position().top }, 'linear');
+  });
+  $('a[href*="#internal"]').on('click', function() {
+    $('html').animate({ scrollTop: $($(this).attr('href')).position().top }, 'linear');
   });
 
   const nav = $('#nav');
   function displayNav() {
     const scrollTop = $(window).scrollTop();
     if (scrollTop > 700) {
-      nav.removeClass('start');
+      nav.removeClass('hidden-nav');
       nav.addClass('navbar is-fixed-top');
     } else {
       nav.removeClass('navbar is-fixed-top');
-      nav.addClass('start');
+      nav.addClass('hidden-nav');
     }
   }
 

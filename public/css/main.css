@@ -1,4 +1,4 @@
-body {
+body, .footer {
   animation: heroAnimation 1000s ease-in infinite;
   background: linear-gradient(to right, #14b450, #2878b4, #5a28be, #9650a0, #dc3c3c);
   background-size: 350% 350%;
@@ -13,11 +13,11 @@ body {
     background-position: 99% 100%; }
   100% {
     background-position: 1% 0%; } }
-.start {
+.hidden-nav {
   animation: heroAnimation 1000s ease-in infinite;
   background: linear-gradient(to right, rgba(20, 180, 80, 0), rgba(40, 120, 140, 0), rgba(60, 40, 190, 0), rgba(150, 80, 160, 0), rgba(220, 80, 100, 0));
   background-size: 350% 350%; }
-  .start .navbar-item {
+  .hidden-nav .navbar-item {
     opacity: 0; }
 
 .navbar {
@@ -32,13 +32,22 @@ body {
 .section {
   height: 100vh; }
 
-#about-me {
-  height: 50px; }
+#menu-about-me {
+  height: 40px; }
 
-#portfolio {
-  height: 50px; }
+#menu-portfolio {
+  height: 40px; }
 
-#contact {
+#menu-contact {
+  height: 10px; }
+
+#internal-about-me {
+  margin-top: .75rem; }
+
+#internal-portfolio {
+  margin-top: .75rem; }
+
+#menu-contact {
   height: 10px; }
 
 .container {
@@ -150,13 +159,17 @@ h2.title.is-2 {
 h3.title.is-3:not(:first-child) {
   margin-top: 2rem; }
 
-h5.subtitle.is-5 {
+h4.subtitle.is-4 {
+  font-family: 'Josefin Sans', sans-serif;
   margin: 0 2.5rem 0 2.5rem;
   font-weight: 700;
-  text-align: left;
+  text-align: right;
   color: white; }
-  h5.subtitle.is-5 a {
+  h4.subtitle.is-4 a {
     color: white; }
+
+.project-details {
+  margin-bottom: 1rem; }
 
 ul#intro {
   border: none;
@@ -207,7 +220,7 @@ ul#intro {
   .text p {
     text-align: left;
     font-size: 1.1rem;
-    margin: 2.5rem; }
+    margin-bottom: 2rem; }
     .text p .drop-character {
       float: left;
       font-size: 75px;
@@ -228,14 +241,26 @@ ul#intro {
       color: white;
       text-decoration: underline; }
 
+.contact-details p {
+  text-align: left; }
+  .contact-details p a {
+    color: white;
+    text-decoration: underline; }
+
 img.inline {
   border: 2px solid white;
   height: 220px;
   width: 350px; }
 
+.is-rounded {
+  border: 2px solid white;
+  height: 400px;
+  width: 400px; }
+
 .portfolio-gif {
   border: 2px solid white;
   height: 400px;
-  width: 780px; }
+  width: 780px;
+  margin-bottom: 2rem; }
 
 /*# sourceMappingURL=main.css.map */

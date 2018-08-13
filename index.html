@@ -6,6 +6,7 @@
   <script src="./js/app.js" charset="utf-8"></script>
   <link rel="stylesheet" href="./public/css/reset.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <link rel="stylesheet" href="./public/css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,700,700i|Quicksand:400,700" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,34 +14,35 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-  <nav class="start" role="navigation" aria-label="main navigation" id="nav">
+  <nav class="hidden-nav" role="navigation" aria-label="main navigation" id="nav">
     <div class="navbar-menu">
       <div class="navbar-end">
-        <a href="#about-me" class="navbar-item">About Me</a>
-        <a href="#portfolio" class="navbar-item">Portfolio</a>
-        <a href="#contact" class="navbar-item">Contact</a>
+        <a href="#home" class="navbar-item">Home</a>
+        <a href="#internal-about-me" class="navbar-item">About Me</a>
+        <a href="#internal-portfolio" class="navbar-item">Portfolio</a>
+        <a href="#internal-contact" class="navbar-item">Contact</a>
       </div>
     </div>
   </nav>
-  <section class="section">
+  <section class="section" id="home">
     <div class="container header-content">
       <h1 class="title is-1">Richard Tzanov</h1>
       <h2 class="title is-2 header-description">Web Developer</h2>
       <ul class="columns is-centered is-mobile" id="intro">
-        <li id="about-me-nav" class="column is-one-third intro-li"><a href="#about-me">About Me</a></li>
-        <li id="portfolio-nav" class="column is-one-third intro-li"><a href="#portfolio">Portfolio</a></li>
-        <li id="contact-nav" class="column is-one-third intro-li"><a href="#contact">Contact</a></li>
+        <li id="about-me-nav" class="column is-one-third intro-li"><a href="#menu-about-me">About Me</a></li>
+        <li id="portfolio-nav" class="column is-one-third intro-li"><a href="#menu-portfolio">Portfolio</a></li>
+        <li id="contact-nav" class="column is-one-third intro-li"><a href="#menu-contact">Contact</a></li>
       </ul>
     </div>
     <div id="arrow-to-about">
-      <a id="scroll-arrow" href="#about-me"><span></span></a>
+      <a id="scroll-arrow" href="#menu-about-me"><span></span></a>
     </div>
   </section>
 
-  <div id="about-me">
+  <div id="menu-about-me">
 
   </div>
-  <section class="section">
+  <section class="section" id="internal-about-me">
     <div class="container">
       <h2 class="title is-2" id="about-me-title">About Me</h2>
       <div class="tabs is-centered is-boxed">
@@ -160,16 +162,16 @@
       </div>
 
       <div id="arrow-to-portfolio">
-        <a class="" id="scroll-arrow" href="#portfolio"><span></span></a>
+        <a class="" id="scroll-arrow" href="#internal-portfolio"><span></span></a>
       </div>
     </div>
   </section>
 
-  <div id="portfolio">
+  <div id="menu-portfolio">
 
   </div>
 
-  <section class="section">
+  <section class="section" id="internal-portfolio">
     <div class="container">
       <h2 class="title is-2" id="portfolio-type"></h2>
       <div class="tabs is-centered is-boxed">
@@ -178,38 +180,52 @@
           <li><a id="tall-man-records-portfolio-tab">Tall Man Records</a></li>
           <li><a id="plant-tracker-portfolio-tab">Plant Tracker</a></li>
           <li><a id="gst-portfolio-tab">Game of Shining Thrones</a></li>
-          <li><a id="in-progress-portfolio-tab">In Progress...</a></li>
+          <li><a id="in-progress-portfolio-tab">In Progress/Bits n Pieces</a></li>
         </ul>
       </div>
       <div class="text">
         <div id="check-it-portfolio-text">
-          <h5 class="subtitle is-5">Website: <a href="https://check-it-planner.herokuapp.com/" target="_blank">https://check-it-planner.herokuapp.com/</a></h4>
-          <h5 class="subtitle is-5">Github: <a href="https://github.com/vonazt/project-4-wdi" target="_blank">https://github.com/vonazt/project-4-wdi</a></h5>
-          <p>Check It was a group project created with two other classmates: <a href="https://biancajemsten.com/">Bianca</a> and <a href="http://martinkoeoep.com/" target="_blank">Martin</a>. The idea came from a practical desire we had to organise group events – Film Club in my case, Dungeons & Dragons in Martin’s – and allow people to vote on which days worked best for them. Our priorities were user experience, test-driven development and building from mobile up. We tried to make the design as clean and intuitive as possible, adding in push and text notifications to alert users when they’ve been invited to an event and when the final dates for an event have been decided.</p>
+          <div class="project-details">
+            <h4 class="subtitle is-4"><a href="https://check-it-planner.herokuapp.com/" target="_blank">check-it-planner.herokuapp.com</a></h4>
+            <h4 class="subtitle is-4"><a href="https://github.com/vonazt/project-4-wdi" target="_blank">github.com/vonazt/project-4-wdi</a></h4>
+          </div>
+          <p><span class="drop-character">C</span>heck It was a group project created with two other classmates: <a href="https://biancajemsten.com/">Bianca</a> and <a href="http://martinkoeoep.com/" target="_blank">Martin</a>. The idea came from a practical desire we had to organise group events – Film Club in my case, Dungeons & Dragons in Martin’s – and allow people to vote on which days worked best for them. Our priorities were user experience, test-driven development and building from mobile up. We tried to make the design as clean and intuitive as possible, adding in push and text notifications to alert users when they’ve been invited to an event and when the final dates for an event have been decided.</p>
           <img class="portfolio-gif" src="https://i.imgur.com/t5L4Gha.gif" alt="Check It">
           <p>The app was built using React, utilising Google Places, React Datepicker, React Filestack, Moment.js, React Select Twilio and Web-Push. Working with React for the first time was a really fun challenge – there was a lot to learn about component-based development in a short space of time. We reached MVP relatively early in the process, and one of the the biggest challenges was then spending a couple of days refactoring all our code to make it as efficient, stable and modular as possible.</p>
           <p>Overall, I’m very pleased with how the project went – we achieved what we set out to do in a relatively short space of time, working with a new framework that incorporated a lot of extra functionality. Working in a small team was a great way of solving the trickier problems and also bouncing creative ideas of each other. If I were to do something differently, I’d be more ruthless with myself in terms of refactoring as I go, rather than creating something that works and moving on to the next problem</p>
         </div>
         <div id="tall-man-records-portfolio-text">
-          <h5 class="subtitle is-5">Website: <a href="https://tallman-records.herokuapp.com/" target="_blank">https://tallman-records.herokuapp.com/</a></h4>
-          <h5 class="subtitle is-5">Github: <a href="https://github.com/vonazt/wdi-3-project" target="_blank">https://github.com/vonazt/wdi-3-project</a></h5>
-          <p>Tall Man Records is a joint project between myself and classmate <a href="http://martinkoeoep.com/" target="_blank">Martin</a>. It is an app that allows users to trade records with each other. Users can upload their own collections, views other users' collections and comment on and review records. The main function allows users to make offers on other records by offering their own. Users can send messages to each other and track the status of each of their trades. Once the trade has been completed, the the owners of the records are swapped in the database.  </p>
+          <div class="project-details">
+            <h4 class="subtitle is-4"><a href="https://tallman-records.herokuapp.com/" target="_blank">tallman-records.herokuapp.com</a></h4>
+            <h4 class="subtitle is-4"><a href="https://github.com/vonazt/wdi-3-project" target="_blank">github.com/vonazt/wdi-3-project</a></h4>
+          </div>
+          <p><span class="drop-character">T</span>all Man Records is a joint project between myself and classmate <a href="http://martinkoeoep.com/" target="_blank">Martin</a>. It is an app that allows users to trade records with each other. Users can upload their own collections, views other users' collections and comment on and review records. The main function allows users to make offers on other records by offering their own. Users can send messages to each other and track the status of each of their trades. Once the trade has been completed, the the owners of the records are swapped in the database.  </p>
           <p>This project included a number of firsts for me. It was my first time using AngularJS, my first time doing pair-programming, and my first time building with a test-driven mindset. Working with AngularJS was enjoyable. I found it relatively easy to get to grips with, the biggest challenge being learning how best to iterate through and render data on the front-end, as well as which parts of the app were best handlded on the back-end. The initial temptation was to do everything on the front-end, and then send it back.</p>
           <img class="portfolio-gif" src="https://i.imgur.com/Hs1O4fQ.gif" alt="Tall Man Records">
           <p>Having my first taste of pair-programming was probably the most enjoyable part of the project. Working with Martin was easy, and, apart from dividing up the basic building blocks of the back-end, we did most of the coding together on the same laptop. This made tricky parts like creating and editing record trade offers, offer statuses and swapping the record owners in the database much easier, and also meant that we both had a clear idea of what was happening at each part of the stack. We were also very happy to have tested more than 90% of the lines of code in the back-end, and are both big fans of test-driven development.</p>
           <p>If we were to do the project again, we would definitely reconsider how we approached our models. Due to the nature of how the user, record and request models all interact, the more functionality we added to the app, the complicated and convoluted each bit of model interaction became. By the end, there was some pretty gnarly code. But we were pleased with what we managed to accomplish with Tall Man Records in a week, both in terms of the funtionality of the app, its design and its test-driven nature.</p>
         </div>
         <div id="plant-tracker-portfolio-text">
-          <h5 class="subtitle is-5">Website: <a href="http://house-plant-tracker.herokuapp.com/" target="_blank">http://house-plant-tracker.herokuapp.com/</a></h4>
-          <h5 class="subtitle is-5">Github: <a href="https://github.com/vonazt/wdi-2-project" target="_blank">https://github.com/vonazt/wdi-2-project</a></h5>
-          <p>With Plant Tracker, users can add their plants to a database along with details such as conditions they need to be kept in, the date they were planted and how often the plants need to be watered. Its main feature is a function that tells the user when the plant needs to be watered, which is reset when the user clicks the `Watered` button.</p>
+          <div class="project-details">
+            <h4 class="subtitle is-4"><a href="http://house-plant-tracker.herokuapp.com" target="_blank">house-plant-tracker.herokuapp.com</a></h4>
+            <h4 class="subtitle is-4"><a href="https://github.com/vonazt/wdi-2-project" target="_blank">github.com/vonazt/wdi-2-project</a></h4>
+          </div>
+          <p><span class="drop-character">W</span>ith Plant Tracker, users can add their plants to a database along with details such as conditions they need to be kept in, the date they were planted and how often the plants need to be watered. Its main feature is a function that tells the user when the plant needs to be watered, which is reset when the user clicks the `Watered` button.</p>
           <p>Plant Tracker was my first time building a full-stack app, which meant that a lot of the initial build was spent familiarising myself with Node.js, the basic principles of RESTful APIs and how an Express app works. There were lots of interesting things to learn, such as user authentication, AWS and the fundamentals of http requests. From the beginning, I had a clear idea of what I wanted the app to do and that the main function of it would be the daysUntilWatering() function that would countdown the number of days since the plant was last watered and remind the user when the plant needed watering.</p>
           <img class="portfolio-gif" src="https://i.imgur.com/9Dudc6W.gif" alt="Plant Tracker">
           <p>Creating this schema method in the end was relatively simple. What wasn't quite so simple was working with EJS Layouts. While I enjoyed learning about how a single view can render multiple instances of the same page using different data, I found the syntax to be quite difficult to use and limited (from a beginner's perspective) in its functionality. It was a great relief after this project was over to move on to the likes of AngularJS, Vue.js and React. That said, it was a good intro to the full-stack world, and I'm happy with how the project turned out. Building something for the first time that came from a practical need and seeing it actually work in action was an extremely satisfying experience.</p>
         </div>
         <div id="gst-portfolio-text">
-          <h3 class="title is-3">Game of Shining Thrones</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div class="project-details">
+            <h4 class="subtitle is-4"><a href="https://vonazt.github.io/wdi-1-project" target="_blank">vonazt.github.io/wdi-1-project</a></h4>
+            <h4 class="subtitle is-4"><a href="https://github.com/vonazt/wdi-1-project" target="_blank">github.com/vonazt/wdi-1-project</a></h4>
+          </div>
+          <p><span class="drop-character">T</span>he brief for this project was to build a browser-based game using HTML, CSS and JavaScript within a week.
+          The game I created is Game of Shining Thrones. It is a turn-based strategy game for two players that was inspired by the Shining Force series of games I loved playing as a child (and also from the Game of Thrones series for its aesthetic design).</p>
+          <p>Game of Shining Thrones was my first attempt at building an app from the ground up and I loved the process. Looking back on it now, I really went for it in terms trying to achieve a lot of things at once in a week, and this is what led to what I consider to be the project's biggest strengths and weaknesses. In terms of its strengths, it was immensely satisfying thinking my way through the problems of creating a grid, moving characters around that grid, having them attack each and cast magic, creating different characters and their stats, how those stats are affected by attacks, etc. There were a lot of different elements to consider and my response to that challenge was to write a lot of code.</p>
+          <img class="portfolio-gif" src="https://i.imgur.com/86KTIYj.gif" alt="Game of Shining Thrones">
+          <p>There are nearly 1,000 lines of code in Game of Shining Thrones, and I know now, with the benefit of all that I've learnt since I made this game, that I can probably achieve the same result, with more robustness, in half that many lines, if not more. I've kept the code as it is as a marker of where I started and how much I've learnt in a short space of time. I also think it reflects a central aspect in what I've learnt about myself as a coder: a tendency to overengineer things and then move on to the next challenge instead of being strict with my refactoring. That said, I am proud of how I managed to find solutions to quite complex problems and the fact that I created my first game in just one week.</p>
+          <p>It's also the most fun I've ever had incorporating sound effects and music into a project.</p>
         </div>
         <div id="in-progress-portfolio-text">
           <h3 class="title is-3">Quiz App</h3>
@@ -222,14 +238,26 @@
     </div>
   </section>
 
-  <div id="contact">
+  <div id="menu-contact">
 
   </div>
 
-  <section class="section">
+  <section class="footer">
     <div class="container">
       <h2 class="title is-2">Contact</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <div class="columns">
+        <div class="column is-one-fifth">
+            <img src="./public/assets/images/me.png" alt="Richard Tzanov">
+        </div>
+        <div class="column is-three-quarters">
+          <div class="contact-details">
+            <p><i class="far fa-envelope fa-2x"></i> <a href="mailto:richardtzanov@gmail.com">Email</a></p>
+            <p><i class="fab fa-linkedin-in fa-2x"></i> <a href="https://www.linkedin.com/in/richard-tzanov">LinkedIn</a></p>
+            <p><i class="fab fa-github fa-2x"></i> <a href="https://github.com/vonazt/">Github</a></p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 </body>
