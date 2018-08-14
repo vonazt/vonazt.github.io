@@ -7,6 +7,10 @@ body, .footer {
   font-weight: 700;
 }
 
+html {
+  overflow-y: scroll;
+}
+
 @keyframes heroAnimation {
     0%{background-position:1% 0%}
     50%{background-position:99% 100%}
@@ -206,7 +210,7 @@ h4.subtitle.is-4 {
   }
 }
 .project-details {
-  margin-bottom: 1rem;
+  margin: 1rem auto;
 }
 
 ul#intro {
@@ -233,9 +237,6 @@ ul#intro {
 .dropdown {
   display: none;
 }
-
-
-
 
 @keyframes bottomright {
   0% {
@@ -298,6 +299,9 @@ ul#intro {
       padding-top: 4px;
       padding-right: 8px;
       padding-left: 3px;
+    }
+    &:first-child {
+      margin-top: 2rem;
     }
     &:last-child {
       padding-bottom: 1rem;
