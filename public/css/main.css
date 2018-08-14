@@ -185,6 +185,47 @@ ul#intro {
   .tabs ul.tabs li a.selected {
     color: black; }
 
+.dropdown {
+  display: none; }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  h1.title.is-1 {
+    font-size: 4rem;
+    margin-bottom: 1rem; }
+
+  .header-content {
+    margin: 50% auto; }
+
+  .intro-li a {
+    font-size: .95rem; }
+
+  .navbar-menu {
+    background-color: white;
+    text-align: right; }
+    .navbar-menu .navbar-item {
+      color: black; }
+
+  .navbar-burger {
+    color: white; }
+    .navbar-burger span {
+      color: white; }
+
+  .desktop-display {
+    display: none; }
+
+  .dropdown {
+    display: inline-block;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid white;
+    padding-bottom: 1rem; }
+    .dropdown .button {
+      background: rgba(255, 255, 255, 0);
+      color: white;
+      font-family: 'Josefin Sans', sans-serif;
+      text-transform: uppercase;
+      font-weight: 700; } }
 @keyframes bottomright {
   0% {
     border: 2px solid rgba(255, 255, 255, 0);

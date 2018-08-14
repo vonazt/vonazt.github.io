@@ -14,7 +14,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-  <nav class="hidden-nav" role="navigation" aria-label="main navigation" id="nav">
+  <nav class="navbar hidden-nav" role="navigation" aria-label="main navigation" id="nav">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+    </div>
     <div class="navbar-menu">
       <div class="navbar-end">
         <a href="#home" class="navbar-item">Home</a>
@@ -45,13 +52,33 @@
   <section class="section" id="internal-about-me">
     <div class="container">
       <h2 class="title is-2" id="about-me-title">About Me</h2>
-      <div class="tabs is-centered is-boxed">
-        <ul class="tabs">
-          <li class="is-active"><a class="selected" id="as-a-coder-about-tab">As A Coder</a></li>
-          <li><a id="things-i-know-about-tab">Some Things I Know*</a></li>
-          <li><a id="before-times-about-tab">The Before Times</a></li>
-          <li><a id="not-coding-about-tab">When I'm Not Coding...</a></li>
-        </ul>
+      <div class="desktop-display">
+        <div class="tabs is-centered is-boxed">
+          <ul class="tabs">
+            <li class="is-active"><a class="selected" id="as-a-coder-about-tab">As A Coder</a></li>
+            <li><a id="things-i-know-about-tab">Some Things I Know*</a></li>
+            <li><a id="before-times-about-tab">The Before Times</a></li>
+            <li><a id="not-coding-about-tab">When I'm Not Coding...</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="dropdown is-right portfolio-drop">
+        <div class="dropdown-trigger">
+          <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+            <span>Past, present, future</span>
+            <span class="icon is-small">
+              <i class="fas fa-angle-down" aria-hidden="true"></i>
+            </span>
+          </button>
+        </div>
+        <div class="dropdown-menu" id="dropdown-menu" role="menu">
+          <div class="dropdown-content">
+            <a class="dropdown-item" id="as-a-coder-about-tab">As A Coder</a>
+            <a class="dropdown-item" id="things-i-know-about-tab">Some Things I Know*</a>
+            <a class="dropdown-item" id="before-times-about-tab">The Before Times</a>
+            <a class="dropdown-item" id="not-coding-about-tab">When I'm Not Coding...</a>
+          </div>
+        </div>
       </div>
       <div class="text">
         <div id="as-a-coder-about-text">
@@ -174,14 +201,35 @@
   <section class="section" id="internal-portfolio">
     <div class="container">
       <h2 class="title is-2" id="portfolio-type"></h2>
-      <div class="tabs is-centered is-boxed">
-        <ul class="tabs">
-          <li class="is-active"><a class="selected" id="check-it-portfolio-tab">Check It</a></li>
-          <li><a id="tall-man-records-portfolio-tab">Tall Man Records</a></li>
-          <li><a id="plant-tracker-portfolio-tab">Plant Tracker</a></li>
-          <li><a id="gst-portfolio-tab">Game of Shining Thrones</a></li>
-          <li><a id="in-progress-portfolio-tab">In Progress/Bits n Pieces</a></li>
-        </ul>
+      <div class="desktop-display">
+        <div class="tabs is-centered is-boxed">
+          <ul class="tabs">
+            <li class="is-active"><a class="selected" id="check-it-portfolio-tab">Check It</a></li>
+            <li><a id="tall-man-records-portfolio-tab">Tall Man Records</a></li>
+            <li><a id="plant-tracker-portfolio-tab">Plant Tracker</a></li>
+            <li><a id="gst-portfolio-tab">Game of Shining Thrones</a></li>
+            <li><a id="in-progress-portfolio-tab">In Progress/Bits n Pieces</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="dropdown is-right portfolio-drop">
+        <div class="dropdown-trigger">
+          <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+            <span>Projects</span>
+            <span class="icon is-small">
+              <i class="fas fa-angle-down" aria-hidden="true"></i>
+            </span>
+          </button>
+        </div>
+        <div class="dropdown-menu" id="dropdown-menu" role="menu">
+          <div class="dropdown-content">
+            <a class="dropdown-item" id="check-it-portfolio-tab">Check It</a>
+            <a class="dropdown-item" id="tall-man-records-portfolio-tab">Tall Man Records</a>
+            <a class="dropdown-item" id="plant-tracker-portfolio-tab">Plant Tracker</a>
+            <a class="dropdown-item" id="gst-portfolio-tab">Game of Shining Thrones</a>
+            <a class="dropdown-item" id="in-progress-portfolio-tab">In Progress/Bits n Pieces</a>
+          </div>
+        </div>
       </div>
       <div class="text">
         <div id="check-it-portfolio-text">
@@ -199,7 +247,7 @@
             <h4 class="subtitle is-4"><a href="https://tallman-records.herokuapp.com/" target="_blank">tallman-records.herokuapp.com</a></h4>
             <h4 class="subtitle is-4"><a href="https://github.com/vonazt/wdi-3-project" target="_blank">github.com/vonazt/wdi-3-project</a></h4>
           </div>
-          <p><span class="drop-character">T</span>all Man Records is a joint project between myself and classmate <a href="http://martinkoeoep.com/" target="_blank">Martin</a>. It is an app that allows users to trade records with each other. Users can upload their own collections, views other users' collections and comment on and review records. The main function allows users to make offers on other records by offering their own. Users can send messages to each other and track the status of each of their trades. Once the trade has been completed, the the owners of the records are swapped in the database.  </p>
+          <p><span class="drop-character">T</span>all Man Records was a joint project between myself and classmate <a href="http://martinkoeoep.com/" target="_blank">Martin</a>. It is an app that allows users to trade records with each other. Users can upload their own collections, views other users' collections and comment on and review records. The main function allows users to make offers on other records by offering their own. Users can send messages to each other and track the status of each of their trades. Once the trade has been completed, the the owners of the records are swapped in the database.  </p>
           <p>This project included a number of firsts for me. It was my first time using AngularJS, my first time doing pair-programming, and my first time building with a test-driven mindset. Working with AngularJS was enjoyable. I found it relatively easy to get to grips with, the biggest challenge being learning how best to iterate through and render data on the front-end, as well as which parts of the app were best handlded on the back-end. The initial temptation was to do everything on the front-end, and then send it back.</p>
           <img class="portfolio-gif" src="https://i.imgur.com/Hs1O4fQ.gif" alt="Tall Man Records">
           <p>Having my first taste of pair-programming was probably the most enjoyable part of the project. Working with Martin was easy, and, apart from dividing up the basic building blocks of the back-end, we did most of the coding together on the same laptop. This made tricky parts like creating and editing record trade offers, offer statuses and swapping the record owners in the database much easier, and also meant that we both had a clear idea of what was happening at each part of the stack. We were also very happy to have tested more than 90% of the lines of code in the back-end, and are both big fans of test-driven development.</p>
@@ -241,6 +289,84 @@
       </div>
     </div>
   </section>
+  <!-- <section id="portfolio" class="fullPage">
+    <div class="container">
+      <h2 class="title is-2" id="portfolio-type"></h2>
+         <div class="portfolioPanels">
+           <div class="panel panel1">
+             <h3 class="title is-3">Check It</h3>
+             <div class="projectInfo">
+               <p class="projectSummary">WDI Project 4 | MERN stack app | 10 days | Group Project </p>
+               <div class="textContainer">
+                 <p>CheckIt is an app that allows users to organize events, invite other users to vote on suitable times and send out notifications via text and push notifications. The project was planned via draw.io and the progress kept track of through Trello cards. The group worked separately on simple tasks and pairprogrammed for more complex problem solving. Personally worked more extensively on installing push notifications and managing the time slot data from the model to display correctly on the front end via virtuals. The app uses data from third parties Google Maps, Twilio and filestack. The project also has both front and back end tests. </p>
+
+                 <p>Technologies used were React, JavaScript, HTML, CSS, SCSS, Node.js, MongoDB, Express, Bulma, Insomnia, webpack, react date-picker, jwt, bcrypt, Moment.js, filetack-js, axios, chai, mocha, nyc, supertest and enzyme.<p>
+                <div class="linkContainer">
+                  <a href="https://github.com/biancajemsten/project-4-wdi ">View on GitHub</a>
+                  <a href="https://checkit-planit.herokuapp.com/">View on Heroku</a>
+                </div>
+               </div>
+             </div>
+           </div>
+           <div class="panel panel2">
+             <h3>Event Bundle</h3>
+             <div class="projectInfo">
+               <p class="projectSummary">WDI Project 3 | MEAN stack app | 8 days | Group Project</p>
+               <div class="imageContainer">
+                 <img src="images/eventBundle.gif"/>
+               </div>
+               <div class="textContainer">
+                 <p>Event Bundle lets the user select the event they’re going to and then it generates restaurants and bars around the event for the user to choose. Once the bundle has been created, other users going can be selected and the transport time to the event calculated. We used draw.io for wireframing of all routes and Trello cards for thorough planning of project process. Held multiple daily stand-ups to keep the team aligned and updated on the progress. Pulled in external API data from Google Place Search, Google Place Details and Skiddle and employed filestack for file uploads. I mainly worked on the create page which requires data from one axios request to be the input of the next axios request and then save the responses into appropriate variables to be sent to the back end.</p>
+
+                 <p>Technologies used were AngularJS, JavaScript, HTML, SCSS, Node.js, MongoDB, Express, webpack, Bulma, jwt, bcrypt, and Moment.js. Wrote back end tests using chai, mocha, nyc and supertest.<p>
+                <div class="linkContainer">
+                  <a href="https://github.com/biancajemsten/project-3-wdi/ ">View on GitHub</a>
+                  <a href="https://event-bundle.herokuapp.com/">View on Heroku</a>
+                </div>
+               </div>
+             </div>
+           </div>
+           <div class="panel panel3">
+             <h3>Travel Recommendations</h3>
+             <div class="projectInfo">
+               <p class="projectSummary">WDI Project 2| Express full stack app | 7 days | Group Project </p>
+               <div class="imageContainer">
+                 <img src="images/travelRecommendations.png"/>
+               </div>
+               <div class="textContainer">
+                 <p>Travel Recommendations is an app for people to have a profile where they can collect all their travel recommendations and have it sorted by countries, to then refer their friends to. Wireframing was sketched out by hand and the app was then built out one route at a time, adding finishing touches through styling.</p>
+
+                 <p>Technologies used were JavaScript, HTML, CSS, SCSS, EJS, Node.js, Express, bcrypt, bluebird, body-parser, MongoDB and Amazon Web Services.<p>
+                <div class="linkContainer">
+                  <a href="https://github.com/biancajemsten/project-2-wdi">View on GitHub</a>
+                  <a href="https://travelrecommendations.herokuapp.com/">View on Heroku</a>
+                </div>
+               </div>
+             </div>
+           </div>
+           <div class="panel panel4">
+             <h3>Hooops</h3>
+             <div class="projectInfo">
+               <p class="projectSummary">WDI Project 2| Express full stack app | 7 days | Group Project </p>
+               <div class="imageContainer">
+                 <img src="images/hooops.gif"/>
+               </div>
+               <div class="textContainer">
+                 <p>Hooops is an in-browser JavaScript game inspired by Flappy Bird. Instead of going between pipes however, the character (which can be chosen by the user) goes through hoops! After extensive initial planning of the game, a simple MVP was built first and then more complex features added with testing. The game is fully mobile responsive and uses the local storage of the device to save high scores.</p>
+
+                 <p>Technologies used were JavaScript, HTML, SCSS and jQuery.<p>
+                <div class="linkContainer">
+                  <a href="https://github.com/biancajemsten/project-1-wdi">View on GitHub</a>
+                  <a href="http://biancajemsten.com/project-1-wdi/">Play the game</a>
+                </div>
+               </div>
+             </div>
+           </div>
+         </div>
+    </div>
+
+       </section> -->
+
 
   <div id="menu-contact">
 
