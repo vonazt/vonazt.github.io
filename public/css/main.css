@@ -188,50 +188,6 @@ ul#intro {
 .dropdown {
   display: none; }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  h1.title.is-1 {
-    font-size: 4rem;
-    margin-bottom: 1rem; }
-
-  .header-content {
-    margin: 30% auto; }
-
-  .intro-li a {
-    font-size: .95rem; }
-
-  .navbar-menu {
-    background-color: white;
-    text-align: right; }
-    .navbar-menu .navbar-item {
-      color: black; }
-
-  .navbar-burger {
-    color: white; }
-    .navbar-burger span {
-      color: white; }
-
-  .desktop-display {
-    display: none; }
-
-  .dropdown {
-    display: inline-block;
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 1rem;
-    border-bottom: 2px solid white;
-    padding-bottom: 1rem; }
-    .dropdown .button {
-      background: rgba(255, 255, 255, 0);
-      color: white;
-      font-family: 'Josefin Sans', sans-serif;
-      text-transform: uppercase;
-      font-weight: 700; }
-
-  .section .container .text {
-    height: 65vh; }
-
-  img.portfolio-gif {
-    height: 220px; } }
 @keyframes bottomright {
   0% {
     border: 2px solid rgba(255, 255, 255, 0);
@@ -309,5 +265,70 @@ img.inline {
   height: 400px;
   width: 780px;
   margin-bottom: 2rem; }
+
+.skills {
+  background-image: url("../assets/images/skills.png");
+  background-size: cover;
+  height: 600px; }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  h1.title.is-1 {
+    font-size: 4rem;
+    margin-bottom: 1rem; }
+
+  h4.subtitle.is-4 {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    text-decoration: underline; }
+
+  .header-content {
+    margin: 30% auto; }
+
+  .intro-li a {
+    font-size: .95rem; }
+
+  .navbar-menu {
+    background-color: white;
+    text-align: right; }
+    .navbar-menu .navbar-item {
+      color: black; }
+
+  .navbar-burger {
+    color: white; }
+    .navbar-burger span {
+      color: white; }
+
+  .desktop-display {
+    display: none; }
+
+  .dropdown {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid white;
+    padding-bottom: 1rem; }
+    .dropdown .dropdown-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+      .dropdown .dropdown-content .dropdown-item {
+        width: 100%; }
+    .dropdown .button {
+      background: rgba(255, 255, 255, 0);
+      color: white;
+      font-family: 'Josefin Sans', sans-serif;
+      text-transform: uppercase;
+      font-weight: 700; }
+
+  .section .container .text {
+    height: 65vh; }
+
+  img.portfolio-gif {
+    height: 220px; }
+
+  .skills {
+    background-image: url("../assets/images/mobile-skills.png"); } }
 
 /*# sourceMappingURL=main.css.map */
