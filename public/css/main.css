@@ -33,10 +33,10 @@ body, .footer {
   height: 100vh; }
 
 #menu-about-me {
-  height: 40px; }
+  height: 60px; }
 
 #menu-portfolio {
-  height: 40px; }
+  height: 80px; }
 
 #menu-contact {
   height: 10px; }
@@ -194,7 +194,7 @@ ul#intro {
     margin-bottom: 1rem; }
 
   .header-content {
-    margin: 50% auto; }
+    margin: 30% auto; }
 
   .intro-li a {
     font-size: .95rem; }
@@ -225,7 +225,13 @@ ul#intro {
       color: white;
       font-family: 'Josefin Sans', sans-serif;
       text-transform: uppercase;
-      font-weight: 700; } }
+      font-weight: 700; }
+
+  .section .container .text {
+    height: 65vh; }
+
+  img.portfolio-gif {
+    height: 220px; } }
 @keyframes bottomright {
   0% {
     border: 2px solid rgba(255, 255, 255, 0);

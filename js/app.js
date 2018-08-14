@@ -58,8 +58,6 @@ function closeNavbar() {
 
 window.addEventListener('DOMContentLoaded', () => {
 
-
-
   new TypeIt('#about-me-title', {
     strings: 'ABOUT ME',
     speed: 100,
@@ -82,15 +80,15 @@ window.addEventListener('DOMContentLoaded', () => {
     $('html').animate({ scrollTop: $($(this).attr('href')).position().top }, 'linear');
   });
 
-  const nav = $('#nav');
+  const $nav = $('#nav');
   function displayNav() {
     const scrollTop = $(window).scrollTop();
     if (scrollTop > 700) {
-      nav.removeClass('hidden-nav');
-      nav.addClass('navbar is-fixed-top');
+      $nav.removeClass('hidden-nav');
+      $nav.addClass('navbar is-fixed-top');
     } else {
-      nav.removeClass('navbar is-fixed-top');
-      nav.addClass('hidden-nav');
+      $nav.removeClass('navbar is-fixed-top');
+      $nav.addClass('hidden-nav');
     }
   }
 
