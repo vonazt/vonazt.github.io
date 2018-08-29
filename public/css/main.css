@@ -6,9 +6,6 @@ body, .footer {
   color: white;
   font-weight: 700; }
 
-html {
-  overflow-y: scroll; }
-
 @keyframes heroAnimation {
   0% {
     background-position: 1% 0%; }
@@ -250,10 +247,13 @@ ul#intro {
       text-decoration: underline; }
 
 .contact-details p {
-  text-align: left; }
+  text-align: center; }
   .contact-details p a {
     color: white;
     text-decoration: underline; }
+
+.contact-columns {
+  margin-top: 2rem; }
 
 img.inline {
   border: 2px solid white;
@@ -275,6 +275,9 @@ img.inline {
   background-image: url("../assets/images/skills.png");
   background-size: cover;
   height: 600px; }
+
+.profile-img {
+  border: 2px solid white; }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   h1.title.is-1 {
@@ -308,7 +311,6 @@ img.inline {
     display: none; }
 
   .dropdown {
-    display: inline-block;
     display: flex;
     justify-content: center;
     margin-bottom: 1rem;

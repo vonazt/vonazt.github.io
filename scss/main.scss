@@ -7,10 +7,6 @@ body, .footer {
   font-weight: 700;
 }
 
-html {
-  overflow-y: scroll;
-}
-
 @keyframes heroAnimation {
     0%{background-position:1% 0%}
     50%{background-position:99% 100%}
@@ -193,6 +189,7 @@ h2.title.is-2 {
   }
 }
 
+
 h3.title.is-3 {
   &:not(:first-child) {
     margin-top: 2rem;
@@ -212,6 +209,8 @@ h4.subtitle.is-4 {
 .project-details {
   margin: 1rem auto;
 }
+
+
 
 ul#intro {
   border: none;
@@ -314,14 +313,17 @@ ul#intro {
 }
 
 .contact-details {
-  // border-bottom: 2px solid white;
   p {
-    text-align: left;
+    text-align: center;
     a {
       color: white;
       text-decoration: underline;
     }
   }
+}
+
+.contact-columns {
+  margin-top: 2rem;
 }
 
 img.inline {
@@ -343,11 +345,14 @@ img.inline {
   margin-bottom: 2rem;
 }
 
-
 .skills {
   background-image: url('../assets/images/skills.png');
   background-size: cover;
   height: 600px;
+}
+
+.profile-img {
+  border: 2px solid white;
 }
 
 
@@ -392,7 +397,6 @@ img.inline {
   }
 
   .dropdown {
-    display: inline-block;
     display: flex;
     justify-content: center;
     margin-bottom: 1rem;
